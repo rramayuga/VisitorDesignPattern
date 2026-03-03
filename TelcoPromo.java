@@ -1,7 +1,7 @@
 public class TelcoPromo {
     public static void main(String[] args) {
 
-        TelcoSubscription smart = new Telco(15, 500, "Smart", false);
+        TelcoSubscription smart = new Telco(15, 500, "Smart", true);
         TelcoSubscription globe = new Telco(10, 450, "Globe", true);
         TelcoSubscription dito = new Telco(8, 400, "Dito", true);
 
