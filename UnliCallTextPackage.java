@@ -4,17 +4,16 @@ public class UnliCallTextPackage implements UnliCallsTextOffer {
     public String showUnliCallsTextOffer(String telcoName, boolean unliCallText) {
 
         if (!unliCallText) {
-            return "Not offered. You will be charged extra per use";
-        }
-
-        if (telcoName.equalsIgnoreCase("Smart")) {
             return "Not offered.";
+        }
+        if (telcoName.equalsIgnoreCase("Smart")) {
+            return "This plan do not offer any free calls or texts, and you will be charged per use.";
         } 
         else if (telcoName.equalsIgnoreCase("Globe")) {
-            return "Offered for Globe Subscribers. You will be charged extra for other networks calls and texts";
+            return "This plan comes with unlimited calls and texts to subscribers within their network. Calls and texts to other networks are charged extra.";
         } 
         else if (telcoName.equalsIgnoreCase("Dito")) {
-            return "Offered to all networks";
+            return "This plan includes unlimited calls and texts to all networks within the country";
         } 
         else {
             return "Telco not supported.";
