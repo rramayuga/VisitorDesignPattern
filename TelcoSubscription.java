@@ -4,5 +4,5 @@ public interface TelcoSubscription{
     public String getTelcoName();
     public double getPromoPrice();
     public int getDataAllowance();
-    public boolean getUnliCallText();
+    public boolean getUnliCallText(); 
 }

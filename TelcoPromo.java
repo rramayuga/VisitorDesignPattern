@@ -4,7 +4,7 @@ public class TelcoPromo {
         TelcoSubscription smart = new Telco(15, 500, "Smart", false);
         TelcoSubscription globe = new Telco(10, 450, "Globe", true);
         TelcoSubscription ditto = new Telco(8, 400, "Dito", true);
-
+ 
         UsagePromo promo = new TelcoAllowance();
         UnliCallsTextOffer unli = new UnliCallTextPackage();
 

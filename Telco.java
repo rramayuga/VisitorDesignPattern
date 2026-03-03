@@ -10,7 +10,7 @@ public class Telco implements TelcoSubscription{
         this.promoPrice = promoPrice;
         this.dataAllowance = dataAllowance;
         this.unliCallText = unliCallText;
-    }
+    } 
 
     @Override
     public String accept(UsagePromo promo, double price){
