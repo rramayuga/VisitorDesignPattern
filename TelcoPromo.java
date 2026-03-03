@@ -3,7 +3,7 @@ public class TelcoPromo {
 
         TelcoSubscription smart = new Telco(15, 500, "Smart", false);
         TelcoSubscription globe = new Telco(10, 450, "Globe", true);
-        TelcoSubscription dito = new Telco(8, 400, "Dito", true);
+        TelcoSubscription ditto = new Telco(8, 400, "Dito", true);
 
         UsagePromo promo = new TelcoAllowance();
         UnliCallsTextOffer unli = new UnliCallTextPackage();
@@ -15,7 +15,7 @@ public class TelcoPromo {
                 promo.showAllowance(globe.getTelcoName(), globe.getPromoPrice()));
 
         System.out.println("Ditto Data Usage Offer and price: " +
-                promo.showAllowance(dito.getTelcoName(), dito.getPromoPrice()));
+                promo.showAllowance(ditto.getTelcoName(), ditto.getPromoPrice()));
 
         System.out.println("\nSmart unlimited calls and text package: " +
                 unli.showUnliCallsTextOffer(smart.getTelcoName(), smart.getUnliCallText()));
@@ -24,6 +24,6 @@ public class TelcoPromo {
                 unli.showUnliCallsTextOffer(globe.getTelcoName(), globe.getUnliCallText()));
 
         System.out.println("Ditto unlimited calls and text package: " +
-                unli.showUnliCallsTextOffer(dito.getTelcoName(), dito.getUnliCallText()));
+                unli.showUnliCallsTextOffer(ditto.getTelcoName(), ditto.getUnliCallText()));
     }
 }
