@@ -1,16 +1,23 @@
-import java.util.*;
-
-public class TelcoAllowance implements UsagePromo{
-    private static Map<String, Integer> promoMap = new HashMap<>();
-
-    static {
-        promoMap.put("Smart", 15);
-        promoMap.put("Globe", 10);
-        promoMap.put("Ditto", 8);
-    }
+public class TelcoAllowance implements UsagePromo {
 
     @Override
     public String showAllowance(String telcoName, double promoPrice) {
-        return promoMap.get(telcoName) + "GB " + promoPrice + "PHP";
+
+        int allowance;
+
+        if (telcoName.equalsIgnoreCase("Smart")) {
+            allowance = 15;
+        } 
+        else if (telcoName.equalsIgnoreCase("Globe")) {
+            allowance = 10;
+        } 
+        else if (telcoName.equalsIgnoreCase("Dito")) {
+            allowance = 8;
+        } 
+        else {
+            return "Telco not supported.";
+        }
+
+        return allowance + "GB for " + String.format("%.2f", promoPrice) + " PHP";
     }
 }
