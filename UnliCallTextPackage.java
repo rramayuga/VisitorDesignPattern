@@ -11,6 +11,9 @@ public class UnliCallTextPackage implements UnliCallsTextOffer{
 
     @Override
     public String showUnliCallsTextOffer(String telcoName, boolean unliCallText) {
-        return uOfferMap.get(telcoName);
+        if (!unliCallText) {
+        return "Not offered";
+    }
+    return uOfferMap.get(telcoName);
     }
 }
